@@ -15,8 +15,7 @@ A responsive React web app to build a custom party food menu by filtering, searc
 
 ## 🔗 Deployment
 
-👉 Live App: [View on Vercel](https://your-vercel-app-link.vercel.app)  
-_(Replace the URL with your actual deployment link)_
+👉 Live App: [https://your-vercel-app-link.vercel.app](https://party-menu-app-sepia-iota.vercel.app/)
 
 ---
 
@@ -90,7 +89,7 @@ Follow these steps to run the project locally:
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/party-menu-app.git
+git clone https://github.com/Amarnath201099/party-menu-app.git
 cd party-menu-app
 ```
 

@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# 🍽️ Party Menu App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React web app to build a custom party food menu by filtering, searching, and selecting dishes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠 Tech Stack
 
-### `npm start`
+- ⚛️ **React** (Functional Components + Hooks)
+- 🎨 **Bootstrap 5**
+- 💻 **CSS** (Responsive with media queries)
+- 🔣 **React Icons**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔗 Deployment
 
-### `npm test`
+👉 Live App: [View on Vercel](https://your-vercel-app-link.vercel.app)  
+_(Replace the URL with your actual deployment link)_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔍 **Filter Dishes By**:
+  - 🍽️ Meal Type (Starter, Main Course, etc.)
+  - 🥦/🍗 Veg / Non-Veg (custom toggles with food symbols)
+- 🔎 **Search** dishes by name
+- ➕➖ **Add or Remove** dishes to/from your menu
+- ✅ **View only selected** dishes
+- 📋 **Modal popup** to view dish ingredients
+- 🔢 **Selected dish counter** with a 📌 fixed bottom **"Continue"** button
+- 📱💻 **Responsive Design** (Mobile, Tablet, Desktop)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧩 Components
 
-### `npm run eject`
+### `App.js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Main logic and state management:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Handles all filters, search, selection, and modal control
+- Passes props to child components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `Filters.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Category buttons
+- Search input with icon
+- Veg/Non-Veg toggles (custom styled)
 
-## Learn More
+### `DishList.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Renders dish cards from filtered list
+- Shows fallback messages when no results or selections
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `DishCard.js`
 
-### Code Splitting
+- Shows dish info and image
+- Add/Remove button floats over image
+- View Ingredients button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `IngredientModal.js`
 
-### Analyzing the Bundle Size
+- Modal with dish details and ingredients
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+src/
+├── App.js
+├── App.css
+├── data/
+│ └── mockDishes.js
+├── components/
+│ ├── Filters.js
+│ ├── DishList.js
+│ ├── DishCard.js
+│ └── IngredientModal.js
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📥 Usage
 
-### Deployment
+Follow these steps to run the project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 1. Clone this repository
 
-### `npm run build` fails to minify
+```bash
+git clone https://github.com/your-username/party-menu-app.git
+cd party-menu-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Run the app locally
+
+```
+npm start
+```
+
+- The app will be available at http://localhost:3000.
+
+---
+
+## 🚀 Future Improvements
+
+Here are a few enhancements planned for the next version:
+
+- 🧾 Add a cart system to manage selected dishes
+- 🛒 Integrate order summary and checkout page
+- 🔗 Connect to a backend (e.g., Node.js + Express)
+- 💾 Store dishes in a real database (e.g., MongoDB or Firebase)
+- 👤 User login & authentication
+- 📊 Admin panel to manage dishes and categories
+
+---
+
+## 💬 Feedback & Suggestions
+
+Your input is valuable!  
+If you have ideas, feature requests, or find a bug — feel free to open an issue or reach out directly.
+
+---
+
+## 🙋 About Me
+
+Made by **Amarnath Racha**
+
+- 📧 **Email**: [amarnath201099@gmail.com](mailto:amarnath201099@gmail.com)
+
+---
+
+## 🙏 Thank You
+
+Thank you for checking out this project!  
+If you found it useful, consider giving it a ⭐️ on [GitHub](https://github.com/your-username).

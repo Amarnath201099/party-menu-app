@@ -97,7 +97,7 @@ const App = () => {
 
   return (
     <div className="app-container container">
-      <h1 className="text-center my-4 title-style">Party Menu App</h1>
+      <h1 className="text-center my-4 title-style">Party Menu Delights</h1>
 
       {!viewSelectedOnly && (
         <>

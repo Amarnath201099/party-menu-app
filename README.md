@@ -140,4 +140,4 @@ Made by **Amarnath Racha**
 ## 🙏 Thank You
 
 Thank you for checking out this project!  
-If you found it useful, consider giving it a ⭐️ on [GitHub](https://github.com/your-username).
+If you found it useful, consider giving it a ⭐️ on [GitHub](https://github.com/Amarnath201099).
